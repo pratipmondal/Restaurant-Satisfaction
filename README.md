@@ -17,7 +17,6 @@ To Run the Program:
 Program:
 --------------------
 private void move() {
-		//check collision
 		for(int z = dots; z>0;z--) {
 			if(z>4 && x[0]==x[z] && y[0]==y[z]) {
 				inGame = false;
@@ -37,7 +36,6 @@ private void move() {
 			timer.stop();
 		}
 		
-		//move
 		for(int z = dots; z>0;z--) {
 			x[z] = x[z-1];
 			y[z] = y[z-1];
